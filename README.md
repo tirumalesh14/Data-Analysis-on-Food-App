@@ -46,8 +46,4 @@ The objective:
   - Cost for two < ₹1000, Rating > 4, Votes > 4, Indian Cuisine, both table booking & delivery.
   - **"India Restaurant" in Kolkata** (ID: 20747).
 
-
-
--- Rolling count by city
-SELECT City, COUNT(*) OVER(PARTITION BY City ORDER BY City) AS Rolling_Count
-FROM Restaurants;
+---
